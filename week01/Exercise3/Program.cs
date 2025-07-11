@@ -40,10 +40,10 @@ class Program
 
             Console.Write("Would you like to play again? (yes/no): ");
             playAgain = Console.ReadLine();
-            Console.WriteLine();
+            Console.WriteLine(); 
         }
 
-        Console.WriteLine("Thanks for playing Guess My Number! ");
+        
         
     }
 }
