@@ -43,7 +43,7 @@ class Program
             Console.WriteLine(); 
         }
 
-        
+        Console.WriteLine("Thanks for playing Guess My Number! ");
         
     }
 }
