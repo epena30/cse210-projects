@@ -14,13 +14,13 @@ class Program
         Job job2 = new Job();
         job2._JobTitle =  "Software Engineer";
         job2._company =  "Microsoft";
-        job2._StartYear = 2012;
-        job2._endYear = 2018;
+        job2._StartYear = 2022;
+        job2._endYear = 2025;
 
 
         Resume myResume = new Resume();
         myResume._name = "Michael Johnson";
-        
+
 
         myResume._jobs.Add(job1);
         myResume._jobs.Add(job2);
