@@ -4,6 +4,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Welcome to the Journal Program.");
+        Console.WriteLine("Welcome to My Journal Program.");
     }
 }
