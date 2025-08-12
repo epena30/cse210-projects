@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Formats.Tar;
 using System.IO;
-using System.Runtime.CompilerServices;
-using System.Security.Cryptography.X509Certificates;
+using System.Runtime;
 
 public class GoalManager
 {
@@ -90,7 +90,7 @@ public class GoalManager
                 int target = int.Parse(Console.ReadLine());
                 Console.WriteLine("Bonus points: ");
                 int bonus = int.Parse(Console.ReadLine());
-                goal = new ChecklistGoal(name, description, points);
+                goal = new ChecklistGoal(name, description, points, target, bonus);
                 break;
         }
         if (goal != null)
@@ -113,7 +113,7 @@ public class GoalManager
         {
             foreach (var goal in _goals)
             {
-                sw.WriteLine(goal.GetStringRepresentation);
+                sw.WriteLine(goal.GetStringRepresentation());
             }
         }
         Console.WriteLine("Goals saved.");
@@ -138,7 +138,7 @@ public class GoalManager
                 string description = parts[1];
                 int points = int.Parse(parts[2]);
 
-                var goal = new SimpleGoal(name, description, points);
+                var goal = new SimpleGoal(name, description, points,);
                 _goals.Add(goal);
             }
         }
@@ -167,6 +167,6 @@ public class GoalManager
     }
     public void DisplayPlayerInfo()
     {
-        Console.WriteLine($"Player's Current Score {_score}");
+        Console.WriteLine($"You have {_score} points.");
     }
 }

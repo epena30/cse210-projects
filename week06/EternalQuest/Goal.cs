@@ -8,9 +8,9 @@ public abstract class Goal
     protected string _description;
     protected int _points;
 
-    public Goal(string shortname, string description, int points) 
+    public Goal(string name, string description, int points) 
     {
-        _shortName = shortname;
+        _shortName = name;
         _description = description;
         _points = points;
     }
