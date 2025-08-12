@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
-using System.Formats.Tar;
 using System.IO;
-using System.Runtime;
 
 public class GoalManager
 {
@@ -138,7 +136,7 @@ public class GoalManager
                 string description = parts[1];
                 int points = int.Parse(parts[2]);
 
-                var goal = new SimpleGoal(name, description, points,);
+                var goal = new SimpleGoal(name, description, points);
                 _goals.Add(goal);
             }
         }
